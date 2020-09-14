@@ -1,0 +1,22 @@
+{
+  "name": "dev.to",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aziaziazi/my-dev.to-posts.git"
+  },
+  "scripts": {
+    "prettier": "prettier",
+    "embedme": "embedme posts/**/*.md",
+    "prettier:base": "yarn run prettier \"**/*.{js,jsx,json,scss,md,ts,html,component.html}\"",
+    "prettier:write": "yarn run prettier:base --write",
+    "prettier:check": "yarn run prettier:base --list-different",
+    "embedme:check": "yarn run embedme --verify",
+    "embedme:write": "yarn run embedme",
+    "dev-to-git": "dev-to-git"
+  },
+  "dependencies": {
+    "dev-to-git": "1.1.0",
+    "embedme": "1.21.0",
+    "prettier": "2.1.1"
+  }
+}
