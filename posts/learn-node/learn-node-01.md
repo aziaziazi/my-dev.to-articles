@@ -6,6 +6,7 @@ description: 'Blocking vs not-blocking'
 tags: node, todayilearned
 series: 'Learn NodeJS'
 ---
+
 Last day assignment asked to browse the node.js website. During so, I encountered [blocking vs non blocking page](https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/) that triggered my curiosity because it mentions:
 
 > Some methods also have blocking counterparts, which have names that end with `Sync`.
