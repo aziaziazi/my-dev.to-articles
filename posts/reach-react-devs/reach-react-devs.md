@@ -21,13 +21,9 @@ While performing delightful debugging session, [Nicolas](twitter.com/NicolasCord
 Easy ! Let's try it:
 
 ```jsx
-const DevMessage = () => {
-  if (!!window.__REACT_DEVTOOLS_GLOBAL_HOOK__) {
-    return <h1>Hello React Dev!</h1>;
-  }
-
-  return null;
-};
+if (!!window.__REACT_DEVTOOLS_GLOBAL_HOOK__) {
+  return <h1>Hello React Dev!</h1>;
+}
 ```
 
 We can also detect any other dev plugin that exposes some variables. We came with `__REDUX_DEVTOOLS_EXTENSION__` and `__VUE_DEVTOOLS_GLOBAL_HOOK__` vars, let my know if you know more!
