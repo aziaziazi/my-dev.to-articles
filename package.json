@@ -6,7 +6,6 @@
   },
   "scripts": {
     "prettier": "prettier",
-    "embedme": "embedme posts/**/*.md",
     "prettier:base": "yarn run prettier \"**/*.{js,jsx,json,scss,md,ts,html,component.html}\"",
     "prettier:write": "yarn run prettier:base --write",
     "prettier:check": "yarn run prettier:base --list-different",
@@ -16,7 +15,6 @@
   },
   "dependencies": {
     "dev-to-git": "1.4.1",
-    "embedme": "1.21.0",
     "prettier": "2.1.1"
   }
 }

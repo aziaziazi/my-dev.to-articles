@@ -1,6 +1,1 @@
-echo lala
-
-yarn run embedme:write
 yarn run prettier:write
-
-echo lolo

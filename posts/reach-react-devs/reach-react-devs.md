@@ -12,7 +12,7 @@ _tldr: devtools globals variables let you guess if your user has a React debugge
 
 Last year my team was striving to find React developers to join us and happily translate fancy product team ideas into JavaScript. With a few million happy users per week, some of our users may be a good fit for our team! Did they know we hire? Probably not! Our career page was accessible by a tiny link between press and affiliation at the bottom of the unlogged home page. And indeed our product was so captivating that they were probably too busy using the app to think about career aspirations! Still we didn't want show a career message to everyone as it would be irrelevant for most of them.
 
-## 🧑‍💻 Method
+# 🧑‍💻 Method
 
 While performing delightful debugging session, [Nicolas](twitter.com/NicolasCordin) and myself came with this idea: as [React devtools plugin](https://www.npmjs.com/package/react-devtools) exposes a global variable, we can use it to know if a user has installed it and toggle a message !
 
@@ -69,7 +69,7 @@ And that's it ! You can [try it live here](https://092ij.csb.app/)
 
 [![live exemple screenshot](https://dev-to-uploads.s3.amazonaws.com/i/vl9mesxa4u9d69bobetm.png)](https://092ij.csb.app/)
 
-## 🕵️ Others techniques
+# 🕵️ Others techniques
 
 With React, Redux and Vue plugins we target a precise but narrow field of developers. Others methods may be inspired by [fingerprinting](https://blog.mozilla.org/internetcitizen/2018/07/26/this-is-your-digital-fingerprint/) techniques :
 
@@ -83,11 +83,11 @@ With React, Redux and Vue plugins we target a precise but narrow field of develo
 
 - Last but not least: [console.log messages](http://console.love/). I like the fact that it's logged for everyone but only the curious will see it.
 
-## 🕶️ Privacy concern
+# 🕶️ Privacy concern
 
 As long as the cookie is anonymous and stays on the user machine it seems fine: looking for someone's global variables is quite similar to approaching him/her in the street to compliment his/her cool webpack t-shirt.
 
-## 🥳 Did it work ?
+# 🥳 Did it work ?
 
 Kind of: with around 1.5 click/day -yes, we added google analytics- the exposure seems sufficient to keep the experiment going. And we did received a candidacy from it!
 
