@@ -1,8 +1,8 @@
 ---
-published: false
+published: true
 title: 'How we reached react devs among our users'
 cover_image: 'https://raw.githubusercontent.com/aziaziazi/my-dev.to-posts/master/posts/reach-react-devs/assets/reach-devs-cover.jpg'
-description: ''
+description: 'Want to trigger some feature only for your devs visitors ?'
 tags: javascript, react, career
 series:
 canonical_url:
@@ -24,11 +24,11 @@ Easy ! Let's try it:
 // code/hello-react-dev.js
 
 if (!!window.__REACT_DEVTOOLS_GLOBAL_HOOK__) {
-  return 'Hello React Dev!';
+  console.log('Hello React Dev!');
 }
 ```
 
-We can also detect any other dev plugin that exposes some variables. We came with `__REDUX_DEVTOOLS_EXTENSION__` and `__VUE_DEVTOOLS_GLOBAL_HOOK__` vars, let my know if you know more!
+We can also detect any other dev plugin that exposes some variables. We came with `__REDUX_DEVTOOLS_EXTENSION__` and `__VUE_DEVTOOLS_GLOBAL_HOOK__`, let me know if you know more!
 
 We also need a way to close the message and persist the information to avoid displaying it again. Let's wrap this in a component:
 
@@ -36,6 +36,7 @@ We also need a way to close the message and persist the information to avoid dis
 // code/dev-message.js
 
 import React from 'react';
+import { useCookies } from 'react-cookie';
 import { useCookies } from 'react-cookie';
 
 export const DevMessage = () => {
@@ -45,7 +46,7 @@ export const DevMessage = () => {
   const hasClosedDevMessage = cookies[cookieName] === 'true';
   const handleClose = () => setCookie(cookieName, true);
 
-  // Check what plugins what installed
+  // Check what plugins are installed
   const userPluginNames = [
     ['react', !!window.__REACT_DEVTOOLS_GLOBAL_HOOK__],
     ['redux', !!window.__REDUX_DEVTOOLS_EXTENSION__],
@@ -55,10 +56,10 @@ export const DevMessage = () => {
     .map(([name]) => name)
     .join(', ');
 
-  if (hasClosedDevMessage) return 'reset your cookies to see the message';
-  if (!userPluginNames) return 'install a plugin to see the message';
   // Only display the message if user has a plugins installed
   // and if s.he didn't close the message yet
+  if (hasClosedDevMessage) return 'reset your cookies to see the message';
+  if (!userPluginNames) return 'install a plugin to see the message';
   return [
     <h1>Hello {userPluginNames} Dev !</h1>,
     <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
@@ -69,9 +70,9 @@ export const DevMessage = () => {
 };
 ```
 
-And that's it ! You can [try it live here](https://092ij.csb.app/)
+And that's it ! You can [try it live here](https://dev-message.aziaziazi.repl.co/)
 
-[![live exemple screenshot](https://dev-to-uploads.s3.amazonaws.com/i/vl9mesxa4u9d69bobetm.png)](https://092ij.csb.app/)
+[![live exemple screenshot](https://dev-to-uploads.s3.amazonaws.com/i/vl9mesxa4u9d69bobetm.png)](https://dev-message.aziaziazi.repl.co/)
 
 # 🕵️ Others techniques
 
@@ -83,7 +84,7 @@ With React, Redux and Vue plugins we target a precise but narrow field of develo
 
 - Google uses it's own data -your search history- to propose you to pass the [foo.bar challenge](https://medium.com/plutonic-services/things-you-should-know-about-google-foobar-invitation-703a535bf30f).
 
-- You may search in the navigation history looking for Github, Stack Overflow, docs references... Not sure if thats legal or not, I wouldn't recommend you to do that!
+- You may look for for Github, Stack Overflow, docs references... in the navigation history. Not sure if that's legal or not, I wouldn't recommend you to do that.
 
 - Last but not least: [console.log messages](http://console.love/). I like the fact that it's logged for everyone but only the curious will see it.
 
@@ -93,6 +94,6 @@ As long as the cookie is anonymous and stays on the user machine it seems fine: 
 
 # 🥳 Did it work ?
 
-Kind of: with around 1.5 click/day -yes, we added google analytics- the exposure seems sufficient to keep the experiment going. And we did received a candidacy from it!
+Kind of: with around 1.5 click/day the exposure seems sufficient to keep the experiment going. And we did receive a candidacy from it!
 
-The approach I shared here with you is fairly basic and was not a technical challenge at all. However I think it's always nice to think about new original ways to take advantage of the tools we use every days. Hope it gave you some inspiration!
+The approach I shared here with you is fairly simple. However I think it's always nice to think about new original ways to take advantage of the tools we use every day. Hope it gave you some inspiration!

@@ -1,2 +1,4 @@
+#!/bin/sh
 yarn run embedme:write
-yarn run prettier:write
+
+git add -u
