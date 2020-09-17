@@ -1,7 +1,7 @@
 ---
 published: false
 title: 'How we reached react devs among our users'
-cover_image: 'https://res.cloudinary.com/practicaldev/image/fetch/s--eQnK419d--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/pjs0j2zdkrkgo9owuafg.jpg'
+cover_image: 'https://raw.githubusercontent.com/aziaziazi/my-dev.to-posts/master/posts/reach-react-devs/assets/reach-devs-cover.jpg'
 description: ''
 tags: javascript, react, career
 series:

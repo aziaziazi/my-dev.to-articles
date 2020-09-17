@@ -1,7 +1,7 @@
 ---
 published: true
 title: 'Introduction and background'
-cover_image: 'https://images.unsplash.com/photo-1558314266-8017415d5367?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
+cover_image: 'https://raw.githubusercontent.com/aziaziazi/my-dev.to-posts/master/posts/learn-node/assets/00-cover.jpg'
 description: 'Introduction and background'
 tags: node, todayilearned
 series: 'Learn NodeJS'
