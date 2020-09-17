@@ -151,7 +151,7 @@ Framework handles common operations we often need to repeat for apps:
 
 Easily **Mapping urls** for ressources/pages to handler functions:
 
-```python
+```py
 from django.conf.urls import url
 from . import views
 
@@ -163,7 +163,7 @@ urlpatterns = [
 
 Filling html **templates** with filtered **data from model**:
 
-```python
+```py
 from django.shortcuts import render
 from .models import Team
 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Site</title>
+  </head>
+  <body>
+    <h1>Welcome to the Simple Site</h1>
+    <p>
+      You may navigate to the
+      <a href="/about.html">about</a>
+      or
+      <a href="/contact.html">contact</a>
+      pages. You also may try others routes:
+    </p>
+    <form onsubmit="window.location.href = event.target[0].value; return false">
+      <input type="text" />
+      <button type="submit">Go !</button>
+    </form>
+  </body>
+</html>
