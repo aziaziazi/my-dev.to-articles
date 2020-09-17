@@ -1,8 +1,7 @@
 ---
-published: false
-title: 'test'
-cover_image: 'https://images.unsplash.com/photo-1566188969180-e765add9a9cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
-description: 'Getting Started'
+published: true
+title: 'Create a simple Node server with http, url and fs'
+cover_image: 'https://raw.githubusercontent.com/aziaziazi/my-dev.to-posts/master/posts/learn-node/assets/01-cover.jpg'
 tags: node, todayilearned
 series: 'Learn NodeJS'
 ---
