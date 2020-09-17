@@ -9,12 +9,14 @@
     "prettier:base": "yarn run prettier \"**/*.{js,jsx,json,scss,md,ts,html,component.html}\"",
     "prettier:write": "yarn run prettier:base --write",
     "prettier:check": "yarn run prettier:base --list-different",
-    "embedme:check": "yarn run embedme --verify",
-    "embedme:write": "yarn run embedme",
+    "embedme:base": "yarn run embedme posts/**/*.md",
+    "embedme:check": "yarn run embedme:base --verify",
+    "embedme:write": "yarn run embedme:base",
     "dev-to-git": "dev-to-git"
   },
   "dependencies": {
     "dev-to-git": "1.4.1",
-    "prettier": "2.1.1"
+    "prettier": "2.1.1",
+    "embedme": "^1.21.0"
   }
 }

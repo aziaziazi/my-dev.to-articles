@@ -20,9 +20,11 @@ While performing delightful debugging session, [Nicolas](twitter.com/NicolasCord
 
 Easy ! Let's try it:
 
-```jsx
+```js
+// code/hello-react-dev.js
+
 if (!!window.__REACT_DEVTOOLS_GLOBAL_HOOK__) {
-  return <h1>Hello React Dev!</h1>;
+  return 'Hello React Dev!';
 }
 ```
 
@@ -31,6 +33,8 @@ We can also detect any other dev plugin that exposes some variables. We came wit
 We also need a way to close the message and persist the information to avoid displaying it again. Let's wrap this in a component:
 
 ```jsx
+// code/dev-message.js
+
 import React from 'react';
 import { useCookies } from 'react-cookie';
 
