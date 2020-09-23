@@ -10,5 +10,9 @@
   {
     "id": 456733,
     "relativePathToArticle": "./posts/learn-node/learn-node-01.md"
+  },
+  {
+    "id": 463910,
+    "relativePathToArticle": "./posts/learn-node/learn-node-02.md"
   }
 ]
