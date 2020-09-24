@@ -33,10 +33,9 @@ We can also detect any other dev plugin that exposes some variables. We came wit
 We also need a way to close the message and persist the information to avoid displaying it again. Let's wrap this in a component:
 
 ```jsx
-// code/dev-message.js
+// code/dev-message.jsx
 
 import React from 'react';
-import { useCookies } from 'react-cookie';
 import { useCookies } from 'react-cookie';
 
 export const DevMessage = () => {
