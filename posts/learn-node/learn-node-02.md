@@ -2,7 +2,7 @@
 published: true
 title: 'Express 101'
 cover_image: 'https://raw.githubusercontent.com/aziaziazi/my-dev.to-posts/master/posts/learn-node/assets/02-cover.jpg'
-tags: node, todayilearned
+tags: node, todayilearned, express
 series: 'Learn NodeJS'
 ---
 
